@@ -1,0 +1,63 @@
+.Header{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-bottom: 3px solid #CDCDCB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 80px ;
+}
+.LeftHeader{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+.Logo{
+    margin-right: 100px;
+    font-style: oblique;
+}
+.MenuItems{
+}
+.MenuItems a{
+    margin: 0;
+    margin-right: 16px;
+    letter-spacing: 0.8px;
+    text-transform: capitalize;
+    color: grey;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.MenuItems a:hover:first-of-type::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -8px;
+    width: 0.1em;
+    height: 100%;
+    background-color: #D87647;
+    transition: all 0.3s ease;
+}
+.MenuItems a:hover:first-of-type::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -8px;
+    width: 0.1em;
+    height: 100%;
+    background-color: #D87647;
+    transition: all 0.3s ease;
+}
+.CreateButton{
+    background-color: #D87647;
+    border: 1px solid #BD6B30;
+    padding: 8px 13px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    text-transform: capitalize;
+}

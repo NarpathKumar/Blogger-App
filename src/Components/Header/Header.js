@@ -15,7 +15,7 @@ class Header extends React.Component{
                         <Link to='/template'>Templates</Link>
                     </nav>
                 </div>
-                <button className={classes.CreateButton}>Create App</button>
+                <Link to="/createApp"><button className={classes.CreateButton}>Create App</button></Link>
             </header>
         );
     }

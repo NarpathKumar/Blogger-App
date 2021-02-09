@@ -7,6 +7,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 12px 80px ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
 }
 .LeftHeader{
     width: fit-content;
@@ -19,33 +23,31 @@
     margin-right: 100px;
     font-style: oblique;
 }
-.MenuItems{
-}
 .MenuItems a{
-    margin: 0;
-    margin-right: 16px;
+    margin: 0 12px;
     letter-spacing: 0.8px;
     text-transform: capitalize;
     color: grey;
     position: relative;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
-.MenuItems a:hover:first-of-type::after{
+.MenuItems a:hover::after{
     content: '';
     position: absolute;
     top: 0;
-    right: -8px;
+    right: -12px;
     width: 0.1em;
     height: 100%;
     background-color: #D87647;
     transition: all 0.3s ease;
 }
-.MenuItems a:hover:first-of-type::before{
+.MenuItems a:hover::before{
     content: '';
     position: absolute;
     top: 0;
-    left: -8px;
+    left: -12px;
     width: 0.1em;
     height: 100%;
     background-color: #D87647;

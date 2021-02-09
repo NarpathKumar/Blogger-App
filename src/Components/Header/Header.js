@@ -1,5 +1,7 @@
 import React from 'react'
 import classes from './Header.module.css'
+import {Link} from 'react-router-dom'
+import Template from '../../Containers/Templates/Template'
 
 class Header extends React.Component{
     render(){
@@ -8,9 +10,9 @@ class Header extends React.Component{
                 <div className={classes.LeftHeader}>
                     <p className={classes.Logo}>BlogSpot</p>
                     <nav className={classes.MenuItems}>
-                        <a>About</a>
-                        <a>Contact</a>
-                        <a>Templates</a>
+                        <Link to='/'>About</Link>
+                        <Link to='/contact'>Contact</Link>
+                        <Link to='/template'>Templates</Link>
                     </nav>
                 </div>
                 <button className={classes.CreateButton}>Create App</button>

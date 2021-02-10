@@ -1,7 +1,6 @@
 import React from 'react'
 import classes from './Header.module.css'
 import {Link} from 'react-router-dom'
-import Template from '../../Containers/Templates/Template'
 
 class Header extends React.Component{
     render(){
@@ -15,7 +14,7 @@ class Header extends React.Component{
                         <Link to='/template'>Templates</Link>
                     </nav>
                 </div>
-                <button className={classes.CreateButton}>Create App</button>
+                <Link to="/createApp"><button className={classes.CreateButton}>Create App</button></Link>
             </header>
         );
     }

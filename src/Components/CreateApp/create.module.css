@@ -1,0 +1,42 @@
+.MainDiv{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 80px;
+    margin-top: 80px;
+}
+.SelectionDiv{
+    width: 500px;
+    box-sizing: border-box;
+    padding: 26px 13px;
+    height: fit-content;
+    background-color: #fff;
+    margin: 0 auto;
+    box-shadow: 0px 0px 4px #ccc;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.SubSelectDiv{
+    width: 100%;
+    min-height: 50px;
+    margin: 10px 0px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.SubSelectDiv p{
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+.CreateWebBut{
+    background-color: #D87647;
+    border: none;
+    color: #fff;
+    padding: 6px 10px;
+    border: 1px solid #BD6B30;
+    border-radius: 4px;
+    letter-spacing: 0.8px;
+    outline: none;
+}

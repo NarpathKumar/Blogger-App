@@ -2,35 +2,31 @@
     width: 100%;
     box-sizing: border-box;
     margin-top: 80px;
-    padding: 50px 100px;
-    position: relative;
+    /* padding: 50px 0px; */
 }
-.ImageAbsolute{
-    width: 100%;
-    height: 1500px;
-    position: absolute;
+.Overlay{
+    width: 100vw;
+    height: 100%;
+    position: fixed;
     background-color: rgba(0,0,0,0.5);
     box-sizing: border-box;
-    top: -80px;
+    top: 0;
     left: 0;
-    z-index: 29;
-    padding: 100px;
+    z-index: 3;
+    padding: 30px 100px;
     display: flex;
     justify-content: center;
     display: none;
 }
 .ImageWrapperDiv{
-    width: 90%;
-    height: 100%;;
+    width: 80%;
+    height: 100%;
     background: transparent;
     box-shadow: 0px 0px 8px black;
-    border-radius: 16px;
-    z-index: 39;
+    overflow-y: scroll;
 }
 .ImageWrapperDiv img{
     width: 100%;
-    height: 100%;
-    border-radius: 16px;
 }
 .ImageActive{
     display: flex;
@@ -46,7 +42,7 @@
     width: 100%;
     box-sizing: border-box;
     height: 500px;
-    background-color: #fff;
+    background-color: #fff;  
     margin-top: 50px;
     border-top-left-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -57,6 +53,7 @@
     height: fit-content;    
     /* border: 1px solid pink; */
     color: black;
+
 }
 .TemplateIndividual p{
     margin: 0;
@@ -75,5 +72,18 @@
     width: 24%;
     height: 300px;
     opacity: 01;
+    border-radius: 6px;
+}
+::-webkit-scrollbar-button{
+    display: none;
+}
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 8px;
+    box-sizing: border-box;
+    overflow: visible;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #555;
     border-radius: 6px;
 }

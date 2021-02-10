@@ -4,7 +4,7 @@ import React from 'react';
 class InbuiltTemplates extends React.Component{
 
     state={
-        active: false,
+        active: true,
         src: ""
     }
 
@@ -19,7 +19,7 @@ class InbuiltTemplates extends React.Component{
     render(){
         return(
             <div className={classes.MainDiv}>
-                <div onClick={this.CancleClick} className={`${classes.ImageAbsolute} ${this.state.active?classes.ImageActive:null}`}>
+                <div onClick={this.CancleClick} className={`${classes.Overlay} ${this.state.active?classes.ImageActive:null}`}>
                     <div className={classes.ImageWrapperDiv}>
                         <img src={this.state.src} alt=""/>
                     </div>

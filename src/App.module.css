@@ -2,6 +2,8 @@
 body{
     margin: 0;
     background-color: #EEEEEC;
+    background: linear-gradient(30deg, #E7E6E4, #FCFCFC);
+    /* background: linear-gradient(30deg, #E7E6E4, #fff) */
 }
 
 .Body {
@@ -14,4 +16,5 @@ body{
     top: 8%;
     height: 92%;
     box-sizing: border-box;
+    padding: 0px 6%;
 }

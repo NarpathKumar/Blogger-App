@@ -1,21 +1,30 @@
-import logo from './logo.svg';
+import {BrowserRouter, Route} from 'react-router-dom'
+
 import classes from './App.module.css';
+
 import Header from './Components/Header/Header'
+import Footer from './Components/Footer/Footer'
+
 import Contact from './Containers/Contact/Contact'
 import About from './Containers/About/About'
 import Template from './Containers/Templates/Template'
-import {BrowserRouter, Route} from 'react-router-dom'
+
+
+
 
 function App() {
   return (
-    <div className={classes.Body}>
-      <BrowserRouter>
+    <BrowserRouter>
+      <div className={classes.Body}>
         <Route path="/" component={Header}/>
-        <Route exact path="/" component={About}/>
-        <Route exact path="/contact" component={Contact}/>
-        <Route exact path="/template" component={Template}/>
-      </BrowserRouter>
-    </div>
+        <div className={classes.MainContainer}>
+          <Route exact path="/" component={About}/>
+          <Route exact path="/contact" component={Contact}/>
+          <Route exact path="/template" component={Template}/>
+        </div>
+        <Route path="/" component={Footer}/>
+      </div>
+    </BrowserRouter>
   );
 }
 

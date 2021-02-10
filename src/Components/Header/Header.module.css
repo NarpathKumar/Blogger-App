@@ -1,4 +1,5 @@
-.Header{
+.MainContainer {
+    height: 8%;
     width: 100%;
     box-sizing: border-box;
     background-color: #fff;
@@ -10,8 +11,9 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9;
+    z-index: 1;
 }
+
 .LeftHeader{
     width: fit-content;
     display: flex;
@@ -19,12 +21,15 @@
     font-size: 16px;
     font-weight: 500;
 }
+
 .Logo{
     margin-right: 100px;
     font-style: oblique;
 }
+
 .MenuItems a{
-    margin: 0 12px;
+    margin: 1px 12px;
+    padding: 0 8px;
     letter-spacing: 0.8px;
     text-transform: capitalize;
     color: grey;
@@ -32,8 +37,10 @@
     cursor: pointer;
     transition: all 0.3s ease;
     text-decoration: none;
+    border: 0.2em solid transparent;
 }
-.MenuItems a:hover::after{
+
+/* .MenuItems a:hover::after{
     content: '';
     position: absolute;
     top: 0;
@@ -43,6 +50,7 @@
     background-color: #D87647;
     transition: all 0.3s ease;
 }
+
 .MenuItems a:hover::before{
     content: '';
     position: absolute;
@@ -52,7 +60,14 @@
     height: 100%;
     background-color: #D87647;
     transition: all 0.3s ease;
+} */
+
+.MenuItems a:hover {
+    border-left: 0.2em solid #D87647;
+    border-right: 0.2em solid #D87647;
+    transition: all 0.5s ease;
 }
+
 .CreateButton{
     background-color: #D87647;
     border: 1px solid #BD6B30;

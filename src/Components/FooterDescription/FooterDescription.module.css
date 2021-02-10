@@ -1,0 +1,11 @@
+.MainContainer {
+    height: 100%;
+    width: 74.8%;
+    background: rgba(0 ,0 , 0, 0.4);
+    backdrop-filter: blur(16px);
+    border-bottom-left-radius: 4px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: center;
+}

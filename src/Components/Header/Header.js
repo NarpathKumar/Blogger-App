@@ -6,7 +6,7 @@ import Template from '../../Containers/Templates/Template'
 class Header extends React.Component{
     render(){
         return(
-            <header className={classes.Header}>
+            <header className={classes.MainContainer}>
                 <div className={classes.LeftHeader}>
                     <p className={classes.Logo}>BlogSpot</p>
                     <nav className={classes.MenuItems}>
